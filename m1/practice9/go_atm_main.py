@@ -1,21 +1,10 @@
 import streamlit as st
  
-# TODO 1: Import the Account class.
 from go_atm_account import Account
- 
- # TODO 2: Import the balance module.
 import go_atm_balance
-  
-# TODO 3: Import the deposit module.
 import go_atm_deposit
- 
-# TODO 4: Import the withdraw module.
 import go_atm_withdraw
- 
-# TODO 5: Import the history module.
 import go_atm_history
- 
-# TODO 6: Import the analysis module.
 import go_atm_analysis
  
  

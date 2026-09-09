@@ -9,7 +9,7 @@ import go_atm_analysis
  
  
 # TODO 7: Create the Account object.
-account = Account("Chanelle Go", 10000.00)
+account = Account("Chanelle Go", 1000.00)
   
 # TODO 8: Configure the Streamlit page.
 st.set_page_config(

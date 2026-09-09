@@ -164,7 +164,7 @@ elif choice == "Withdraw":
 
 # HISTORY HERE
 # TODO 39: Add the "View History" branch.
- elif choice == "View History":
+elif choice == "View History":
  
 # TODO 40: Display the Transaction History header.
   st.header("Transaction History")
@@ -240,7 +240,7 @@ elif choice == "Withdraw":
         )
  
 # TODO 53: If there are no transactions, display an informational message.
-     else:
+  else:
 
         st.info(
             "No transactions available."

@@ -26,7 +26,7 @@ class Account:
 
 """ 
 ######### Learning Signature ######### 
-Programmed by: Clyde Balaman
+Programmed by: Clyde go
 Date Submitted: September 4, 2026
  
 Program Description: This program is an updated version of Account from practice 8 that adds a withdraw option.

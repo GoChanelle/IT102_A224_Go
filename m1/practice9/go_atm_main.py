@@ -49,7 +49,7 @@ choice = st.sidebar.radio(
     "Check Balance",
     "Deposit",
     "Withdraw",
-    "View History",
+    "View",
     "Analyze Transactions",
   ]
 )

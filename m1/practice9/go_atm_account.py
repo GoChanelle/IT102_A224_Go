@@ -1,9 +1,7 @@
 class Account:
     # TODO 1: Create the constructor.
     def __init__(self, name, starting_balance):
-        # TODO 2: Store the account name.
         self.account_name = name
-        # TODO 3: Store the starting balance as an internal attribute.
         self._balance = starting_balance
  
     # TODO 4: Create check_balance().     

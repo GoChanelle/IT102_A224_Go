@@ -3,8 +3,6 @@ from datetime import datetime
 
 # TODO 2: Create deposit_money().
 def deposit_money(account, amount):
-
-    # TODO 3: Check whether the amount is valid.
     if amount <= 0:
         return False
     
@@ -35,8 +33,6 @@ def deposit_money(account, amount):
 # TODO 12: Return False when the transaction is unsuccessful.
     return False
  
- 
-
 """ 
 ######### Learning Signature ######### 
 Programmed by: Chanelle Go

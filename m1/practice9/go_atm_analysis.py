@@ -28,20 +28,29 @@ def analyze_transactions():
     for line in lines:
         line = line.strip()
  
-    # TODO 7: Ignore empty lines.
         if not line:
             continue
  
         if line.startswith("Timestamp:"):
-            current["timestamp"] = (line.replace("Timestamp:", "").strip())
+
+            current["timestamp"] = (
+                line.replace("Timestamp:", "").strip()
+            )
 
         elif line.startswith("Account:"):
-            current["account"] = (line.replace("Account:", "").strip())
+
+            current["account"] = (
+                line.replace("Account:", "").strip()
+            )
 
         elif line.startswith("Transaction:"):
-            current["type"] = (line.replace("Transaction:", "").strip())
+
+            current["type"] = (
+                line.replace("Transaction:", "").strip()
+            )
 
         elif line.startswith("Amount:"):
+
             amount_text = (
                 line.replace("Amount: ₱", "")
                 .replace(",", "")
@@ -54,13 +63,10 @@ def analyze_transactions():
                 current["amount"] = 0.0
  
     # TODO 12:
-    # Once the required transaction
-    # information has been collected,
-    # add the transaction to the
-    # transactions list.
-    if "type" in current and "amount" in current:
-        transactions.append(current.copy())
-        current = {}
+            if "type" in current and "amount" in current:
+                transactions.append(current.copy())
+                
+            current = {}
     
  
     # TODO 13: Calculate the total number of transactions.
@@ -89,26 +95,19 @@ def analyze_transactions():
     latest_timestamp = "None"
 
     for transaction in transactions:
-
         transaction_type = transaction["type"]
         amount = transaction["amount"]
 
-        # Count deposits
         if transaction_type == "Deposit":
-
             deposits += 1
             total_deposited += amount
 
-        # Count withdrawals
         elif transaction_type == "Withdraw":
 
             withdrawals += 1
             total_withdrawn += amount
 
-
-        # Find largest transaction
         if amount > largest_transaction:
-
             largest_transaction = amount
 
 
@@ -117,7 +116,6 @@ def analyze_transactions():
 
         # Timestamp may not exist in old records
         if "timestamp" in transaction:
-
             latest_timestamp = transaction["timestamp"]
  
     # TODO 21: Calculate the average transaction amount. Avoid division by zero.

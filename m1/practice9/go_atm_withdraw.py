@@ -1,8 +1,8 @@
 # TODO 1: Import datetime.
 from datetime import datetime
+
 # TODO 2: Create withdraw_money().
 def withdraw_money(account, amount):
-    # TODO 3: Reject zero or negative withdrawal amounts.
     if amount <= 0:
         return False
     

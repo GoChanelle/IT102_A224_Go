@@ -1,7 +1,5 @@
 # TODO 1: Create a function named check_balance().
 def check_balance(account):
-    
-    # TODO 2: Ask the Account object for its current balance.
     return account.check_balance()
 
 """ 

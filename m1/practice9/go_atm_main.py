@@ -245,6 +245,121 @@ elif choice == "View History":
         st.info(
             "No transactions available."
         )
+
+# ANALYSIS HERE
+# TODO 54: Add the "Analyze Transactions" branch.
+elif choice == "Analyze Transactions":
+ 
+# TODO 55: Display the Transaction Analysis header.
+  st.header("Transaction Analysis")
+ 
+# TODO 56: Call analyze_transactions()
+  result = (
+    go_atm_analysis.analyze_transactions()
+  )
+ 
+ 
+# ==========================================
+# TRANSACTION SUMMARY
+# ==========================================
+ 
+# TODO 57: Display: Transaction Summary
+  st.subheader("1. Transaction Summary")
+ 
+ 
+# TODO 58: Create three Streamlit columns.
+  col1, col2, col3 = st.columns(3)
+ 
+ 
+# TODO 59: Display: Total Transactions
+  col1.metric(
+    "Total Transactions",
+    result["total_transactions"]
+  )
+ 
+ 
+# TODO 60: Display: Deposits
+  col2.metric(
+    "Deposits",
+    result["deposits"]
+  )
+ 
+# TODO 61: Display: Withdrawals
+  col3.metric(
+    "Withdrawals",
+    result["withdrawals"]
+  )
+ 
+# ==========================================
+# TRANSACTION AMOUNT ANALYSIS
+# ==========================================
+ 
+# TODO 62: Add a divider.
+  st.divider()
+ 
+# TODO 63: Display:
+# 2. Transaction Amount Analysis
+  st.subheader(
+      "2. Transaction Amount Analysis"
+    )
+ 
+# TODO 64: Create three columns.
+  col1, col2, col3 = st.columns(3)
+ 
+# TODO 65: Display: Total Deposited
+  col1.metric(
+    "Total Deposited",
+    f"₱{result['total_deposited']:,.2f}"
+  ) 
+ 
+# TODO 66: Display: Total Withdrawn
+  col2.metric(
+    "Total Withdrawn",
+    f"₱{result['total_withdrawn']:,.2f}"
+  ) 
+ 
+# TODO 67: Display: Average Transaction
+  col3.metric(
+    "Average Transaction",
+    f"₱{result['average_transaction']:,.2f}"
+  )
+ 
+# ==========================================
+# ACCOUNT ACTIVITY ANALYSIS
+# ==========================================
+ 
+ 
+# TODO 68: Add another divider.
+  st.divider()
+ 
+# TODO 69: Display:
+# 3. Account Activity Analysis
+  st.subheader(
+    "3. Account Activity Analysis"
+  )
+ 
+# TODO 70: Create three columns.
+  col1, col2, col3 = st.columns(3)
+ 
+ 
+# TODO 71: Display: Latest Transaction
+  col1.metric(
+    "Latest Transaction",
+    result["latest_transaction"]
+  ) 
+ 
+# TODO 72: Display: Largest Transaction
+  col2.metric(
+    "Largest Transaction",
+    f"₱{result['largest_transaction']:,.2f}"
+  )
+ 
+# TODO 73: Display: Latest Activity
+  col3.metric(
+    "Latest Activity",
+    result["latest_timestamp"]
+  )
+
 ######### Learning Signature ######### 
 #Programmed by: Chanelle Go
 #Date Submitted: September 9, 2026

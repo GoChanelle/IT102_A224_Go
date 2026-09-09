@@ -68,3 +68,41 @@ if choice == "Check Balance":
     "Current Balance",
     f"P{balance:,.2f}"
     )
+
+# TODO 18: Add the "Deposit" branch.
+elif choice == "Deposit":
+ 
+# TODO 19: Display the Deposit Money header.
+  st.header("Deposit Money")
+ 
+# TODO 20: Create a number input.
+amount = st.number_input(
+  "Enter deposit amount",
+  min_value=0.0,
+  step=100.0,
+  format="%.2f"
+) 
+ 
+# TODO 21: Create a button named: Deposit Money
+if st.button("Deposit Money"):
+  
+# TODO 22: When the button is clicked, check whether the amount is valid.
+# TODO 23: If the amount is invalid, display a Streamlit error message. 
+  if amount <= 0:
+    st.error("Invalid deposit amount.")
+
+# TODO 24: Otherwise, call the deposit module.  
+  else:
+    success = (
+      go_atm_deposit.deposit_money(account, amount)
+    )
+
+# TODO 25: If the deposit is successful, display a success message.
+if success:
+  st.success("Deposit Successful.")
+ 
+# TODO 26: Display the updated balance using a Streamlit metric.
+st.metric(
+  "New Balance",
+  f"P{account.check_balance():,.2f}"
+)

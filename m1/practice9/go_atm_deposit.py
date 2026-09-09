@@ -35,21 +35,7 @@ def deposit_money(account, amount):
 # TODO 12: Return False when the transaction is unsuccessful.
     return False
  
- # CHECK BALANCE HERE
-# TODO 14: Check whether the selected option "Check Balance".
-if choice == "Check Balance":
  
-# TODO 15: Display a page header.
-  st.header("Check Balance");
- 
-# TODO 16: Call the balance module and obtain the current account balance.
-  balance = (go_atm_balance.check_balance(account))
- 
-# TODO 17: Display the balance using a Streamlit metric.
-  st.metric(
-    "Current Balance",
-    f"P{balance:,.2f}"
-    )
 
 """ 
 ######### Learning Signature ######### 

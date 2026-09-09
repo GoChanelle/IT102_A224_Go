@@ -29,11 +29,27 @@ def deposit_money(account, amount):
 
             # TODO 10: Write the transaction amount. Format the amount to two decimal places.
             file.write(f"Amount: ₱{amount:.2f}\n\n")
+
         # TODO 11: Return True when the transaction is successful.
         return True
 # TODO 12: Return False when the transaction is unsuccessful.
     return False
  
+ # CHECK BALANCE HERE
+# TODO 14: Check whether the selected option "Check Balance".
+if choice == "Check Balance":
+ 
+# TODO 15: Display a page header.
+  st.header("Check Balance");
+ 
+# TODO 16: Call the balance module and obtain the current account balance.
+  balance = (go_atm_balance.check_balance(account))
+ 
+# TODO 17: Display the balance using a Streamlit metric.
+  st.metric(
+    "Current Balance",
+    f"P{balance:,.2f}"
+    )
 
 """ 
 ######### Learning Signature ######### 

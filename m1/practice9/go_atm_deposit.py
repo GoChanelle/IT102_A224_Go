@@ -38,8 +38,9 @@ def deposit_money(account, amount):
 Programmed by: Chanelle Go
 Date Submitted: September 2, 2026
  
-Program Description: This program 
-Reflection: I learned 
+Program Description: This program calls Account.deposit() money into 
+#an account. If successful, create a timestamp and transaction details. 
+Reflection: I learned how to use the datetime module to create a timestamp.
  
 AI Usage
 [/] No AI Assistance – Completed independently without AI.

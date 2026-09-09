@@ -152,8 +152,11 @@ def analyze_transactions():
 Programmed by: Chanelle Go
 Date Submitted: September 8, 2026
  
-Program Description: This program is the analysis module for an ATM. It gets the transaction data from a text file and calculates and summarizes the data.
-Reflection: I learned how to analyze transaction data and calculate various metrics.
+Program Description: This program is the analysis module for an ATM. 
+It gets the transaction data from a text file and calculates 
+and summarizes the data.
+Reflection: I learned how to analyze transaction data and calculate 
+various metrics.
  
 AI Usage
 [/] No AI Assistance – Completed independently without AI.

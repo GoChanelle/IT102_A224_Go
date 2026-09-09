@@ -26,10 +26,8 @@ class Account:
 ######### Learning Signature ######### 
 Programmed by: Chanelle Go
 Date Submitted: September 4, 2026
- 
 Program Description: This program is an updated version of Account from practice 8 that adds a withdraw option.
 Reflection: I learned how to create object attributes and manage their values within a class.
- 
 AI Usage
 [/] No AI Assistance – Completed independently without AI.
 [ ] AI as Support Tool – Used AI for explanations, syntax, or minor corrections.

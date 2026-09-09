@@ -37,7 +37,9 @@ Programmed by: Chanelle Go
 Date Submitted: September 2, 2026
  
 Program Description: 
-This program calls Account.withdraw() to withdraw money from an account. If the withdrawal is successful, it creates a timestamp and writes the transaction details to a text file.
+This program calls Account.withdraw() to withdraw money from an account. 
+If the withdrawal is successful, it creates a timestamp and writes the 
+transaction details to a text file.
 Reflection: I learned how to use the datetime module to create timestamps.
  
 AI Usage

@@ -162,6 +162,89 @@ elif choice == "Withdraw":
           f"P{account.check_balance():,.2f}"
         )
 
+# HISTORY HERE
+# TODO 39: Add the "View History" branch.
+ elif choice == "View History":
+ 
+# TODO 40: Display the Transaction History header.
+  st.header("Transaction History")
+ 
+# TODO 41: Call view_history() from the history module.
+  lines = (
+    go_atm_history.view_history()
+  )
+ 
+# TODO 42: Create an empty list named transactions.
+  transactions = []
+ 
+# TODO 43: Create an empty dictionary for the current transaction.
+  current_transaction = {}
+ 
+# TODO 44: Use a for loop to process every returned line.
+  for line in lines:
+ 
+# TODO 45: Remove unnecessary spaces and newline characters.
+    line = line.strip()
+ 
+# TODO 46: Skip empty lines.
+    if not line:
+      continue
+ 
+# TODO 47: Detect Timestamp lines.
+    if line.startswith("Timestamp: "):
+      current_transaction["Timestamp"] = (
+        line.replace(
+          "Timestamp:",
+          ""
+        ).strip()
+      )
+ 
+# TODO 48: Detect Account lines.
+    elif line.startswith("Account: "):
+      current_transaction["Account"] = (
+        line.replace(
+          "Account:",
+          ""
+        ).strip()
+      )
+ 
+# TODO 49: Detect Transaction lines.
+    elif line.startswith("Transaction: "):
+      current_transaction["Transaction"] = (
+        line.replace(
+          "Transaction:",
+          ""
+        ).strip()
+      )
+ 
+# TODO 50: Detect Amount lines.
+    elif line.startswith("Amount: "):
+      current_transaction["Amount"] = (
+        line.replace(
+          "Amount: P",
+          ""
+        ).strip()
+      )
+ 
+# TODO 51: Add completed transactions to the transactions list.
+      transactions.append(current_transaction)
+      current_transaction = {}
+ 
+# TODO 52: Display the transactions using an appropriate Streamlit table component.
+  if transactions:
+
+        st.dataframe(
+            transactions,
+            use_container_width=True,
+            hide_index=True
+        )
+ 
+# TODO 53: If there are no transactions, display an informational message.
+     else:
+
+        st.info(
+            "No transactions available."
+        )
 ######### Learning Signature ######### 
 #Programmed by: Chanelle Go
 #Date Submitted: September 9, 2026

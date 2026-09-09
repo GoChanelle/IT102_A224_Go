@@ -53,57 +53,19 @@ choice = st.sidebar.radio(
     "Analyze Transactions",
   ]
 )
-# CHECK BALANCE HERE
-# TODO 14: Check whether the selected option "Check Balance".
-if choice == "Check Balance":
- 
-# TODO 15: Display a page header.
-  st.header("Check Balance");
- 
-# TODO 16: Call the balance module and obtain the current account balance.
-  balance = (go_atm_balance.check_balance(account))
- 
-# TODO 17: Display the balance using a Streamlit metric.
-  st.metric(
-    "Current Balance",
-    f"P{balance:,.2f}"
-    )
 
-# DEPOSIT HERE
-# TODO 18: Add the "Deposit" branch.
-elif choice == "Deposit":
+""" 
+######### Learning Signature ######### 
+Programmed by: Chanelle Go
+Date Submitted: September 9, 2026
  
-# TODO 19: Display the Deposit Money header.
-  st.header("Deposit Money")
+Program Description: 
+This program creates the main menu and sidebar for Python ATM.
+Reflection:
+I learned how to launch a streamlit page and connect my Github to Streamlit.
  
-# TODO 20: Create a number input.
-  amount = st.number_input(
-    "Enter deposit amount",
-    min_value=0.0,
-    step=100.0,
-    format="%.2f"
-  ) 
- 
-# TODO 21: Create a button named: Deposit Money
-  if st.button("Deposit Money"):
-  
-# TODO 22: When the button is clicked, check whether the amount is valid.
-# TODO 23: If the amount is invalid, display a Streamlit error message. 
-    if amount <= 0:
-      st.error("Invalid deposit amount.")
-
-# TODO 24: Otherwise, call the deposit module.  
-    else:
-      success = (
-        go_atm_deposit.deposit_money(account, amount)
-      )
-
-# TODO 25: If the deposit is successful, display a success message.
-    if success:
-      st.success("Deposit Successful.")
- 
-# TODO 26: Display the updated balance using a Streamlit metric.
-    st.metric(
-      "New Balance",
-      f"P{account.check_balance():,.2f}"
-    ) 
+AI Usage
+[/] No AI Assistance – Completed independently without AI.
+[ ] AI as Support Tool – Used AI for explanations, syntax, or minor corrections.
+[ ] AI as Collaborative Partner – Used AI to design, structure, or co-create significant code.
+"""   

@@ -54,18 +54,18 @@ choice = st.sidebar.radio(
   ]
 )
 
-""" 
+
 ######### Learning Signature ######### 
-Programmed by: Chanelle Go
-Date Submitted: September 9, 2026
+#Programmed by: Chanelle Go
+#Date Submitted: September 9, 2026
  
-Program Description: 
-This program creates the main menu and sidebar for Python ATM.
-Reflection:
-I learned how to launch a streamlit page and connect my Github to Streamlit.
+#Program Description: 
+#This program creates the main menu and sidebar for Python ATM.
+#Reflection:
+#I learned how to launch a streamlit page and connect my Github to Streamlit.
  
-AI Usage
-[/] No AI Assistance – Completed independently without AI.
-[ ] AI as Support Tool – Used AI for explanations, syntax, or minor corrections.
-[ ] AI as Collaborative Partner – Used AI to design, structure, or co-create significant code.
-"""   
+#AI Usage
+#[/] No AI Assistance – Completed independently without AI.
+#[ ] AI as Support Tool – Used AI for explanations, syntax, or minor corrections.
+#[ ] AI as Collaborative Partner – Used AI to design, structure, or co-create significant code.
+   

@@ -8,7 +8,7 @@ class Account:
  
     # TODO 4: Create check_balance().     
     def check_balance(self):
-        return self._balace
+        return self._balance
  
     # TODO 5: Create deposit(). 
     def deposit(self, amount):

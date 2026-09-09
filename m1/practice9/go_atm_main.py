@@ -103,7 +103,7 @@ if st.button("Deposit Money"):
     st.success("Deposit Successful.")
  
 # TODO 26: Display the updated balance using a Streamlit metric.
-st.metric(
-  "New Balance",
-  f"P{account.check_balance():,.2f}"
-)
+  st.metric(
+    "New Balance",
+    f"P{account.check_balance():,.2f}"
+  )

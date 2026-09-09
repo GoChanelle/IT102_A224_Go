@@ -98,8 +98,8 @@ if st.button("Deposit Money"):
     )
 
 # TODO 25: If the deposit is successful, display a success message.
-if success:
-  st.success("Deposit Successful.")
+  if success:
+    st.success("Deposit Successful.")
  
 # TODO 26: Display the updated balance using a Streamlit metric.
 st.metric(

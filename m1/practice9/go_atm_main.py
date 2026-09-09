@@ -69,6 +69,7 @@ if choice == "Check Balance":
     f"P{balance:,.2f}"
     )
 
+
 # TODO 18: Add the "Deposit" branch.
 elif choice == "Deposit":
  

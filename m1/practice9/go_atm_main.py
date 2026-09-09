@@ -354,9 +354,9 @@ elif choice == "Analyze Transactions":
 #Date Submitted: September 9, 2026
  
 #Program Description: 
-#This program creates GUI for viewing the transaction history. It displays the timestamp of the transaction, type, and amount.
+#This program completes the ATM GUI with all functions.
 #Reflection:
-#I learned to create a table that creates a summary for what the other modules has done.
+#I learned to make a functioning GUI and combining Python OOP and Streamlit GUI.
  
 #AI Usage
 #[/] No AI Assistance – Completed independently without AI.

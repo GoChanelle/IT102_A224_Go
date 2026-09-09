@@ -100,21 +100,21 @@ elif choice == "Deposit":
       )
 
 # TODO 25: If the deposit is successful, display a success message.
-    if success:
-      st.success("Deposit Successful.")
+      if success:
+        st.success("Deposit Successful.")
  
 # TODO 26: Display the updated balance using a Streamlit metric.
-    st.metric(
-      "New Balance",
-      f"P{account.check_balance():,.2f}"
-    ) 
+      st.metric(
+        "New Balance",
+        f"P{account.check_balance():,.2f}"
+      ) 
 
 ######### Learning Signature ######### 
 #Programmed by: Chanelle Go
 #Date Submitted: September 9, 2026
  
 #Program Description: 
-#This program creates GUI for checking balance. It imports the check_balance function and displays its contents.
+#This program creates GUI for depositing money. It imports the deposit_money function and accepts an amount through a number input.
 #Reflection:
 #I learned how to begin connecting my modules into Streamlit and displaying the balance using st.metric.
  

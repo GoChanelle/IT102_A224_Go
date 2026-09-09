@@ -116,7 +116,7 @@ elif choice == "Deposit":
 #Program Description: 
 #This program creates GUI for depositing money. It imports the deposit_money function and accepts an amount through a number input.
 #Reflection:
-#I learned how to begin connecting my modules into Streamlit and displaying the balance using st.metric.
+#I learned that a button can check if an amount is valid and a number input is used to add money.
  
 #AI Usage
 #[/] No AI Assistance – Completed independently without AI.

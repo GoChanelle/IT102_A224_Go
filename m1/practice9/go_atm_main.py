@@ -50,6 +50,6 @@ choice = st.sidebar.radio(
     "Deposit",
     "Withdraw",
     "View History",
-    "Analyzze Transactions",
+    "Analyze Transactions",
   ]
 )

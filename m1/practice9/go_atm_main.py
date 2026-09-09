@@ -250,9 +250,9 @@ elif choice == "View History":
 #Date Submitted: September 9, 2026
  
 #Program Description: 
-#This program creates GUI for withdrawing money. It imports the withdraw_money function and accepts an amount through a number input.
+#This program creates GUI for viewing the transaction history. It displays the timestamp of the transaction, type, and amount.
 #Reflection:
-#I learned that a button can check if an amount is valid and a number input is used to add money.
+#I learned to create a table that creates a summary for what the other modules has done.
  
 #AI Usage
 #[/] No AI Assistance – Completed independently without AI.

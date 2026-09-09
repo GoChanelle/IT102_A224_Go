@@ -42,6 +42,11 @@ def analyze_transactions():
             current["type"] = (line.replace("Transaction:", "").strip())
 
         elif line.startswith("Amount:"):
+            amount_text = (
+                line.replace("Amount: ₱", "")
+                .replace(",", "")
+                .strip()
+            )
 
             try:
                 current["amount"] = float(amount_text)

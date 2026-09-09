@@ -107,14 +107,67 @@ elif choice == "Deposit":
       st.metric(
         "New Balance",
         f"P{account.check_balance():,.2f}"
-      ) 
+      )
+
+# WITHDRAW HERE
+# TODO 27: Add the "Withdraw" branch.
+elif choice == "Withdraw": 
+ 
+# TODO 28: Display the Withdraw Money header.
+  st.header("Withdraw Money")
+ 
+# TODO 29: Display the available account balance.
+  st.write(
+    f"Available Balance: "
+    f"P{account.check_balance():,.2f}"
+  ) 
+ 
+# TODO 30: Create a number input for the withdrawal amount.
+  amount = st.number_input(
+    "Enter withdrawal amount"
+    min_value=0.0,
+    step=100.0,
+    format="%.2f"
+  )
+ 
+# TODO 31: Create the Withdraw Money button.
+  if st.button("Withdraw Money"):
+ 
+# TODO 32: Check whether the withdrawal amount is valid.
+    if amount <= 0
+ 
+ 
+# TODO 33: Display an error if the amount is zero or negative.
+      st.error("Invalid withdrawal amount.")
+ 
+# TODO 34: Check whether the requested amount is greater than the current balance.
+    elif amount > account.check_balance():
+ 
+# TODO 35: Display an error when the account has insufficient balance.
+      st.error("Insufficient balance.")
+ 
+# TODO 36: Call the withdrawal module when the amount is valid.
+    else:
+      success = (
+        go_atm_withdraw.withdraw_money(account, amount)
+      )
+ 
+# TODO 37: Display a success message after a successful withdrawal.
+      if success:
+        st.succes("Withdrawal successful.")
+ 
+# TODO 38: Display the updated balance. 
+        st.metric(
+          "New Balance",
+          f"P{account.check_balance():,.2f}"
+        )
 
 ######### Learning Signature ######### 
 #Programmed by: Chanelle Go
 #Date Submitted: September 9, 2026
  
 #Program Description: 
-#This program creates GUI for depositing money. It imports the deposit_money function and accepts an amount through a number input.
+#This program creates GUI for withdrawing money. It imports the withdraw_money function and accepts an amount through a number input.
 #Reflection:
 #I learned that a button can check if an amount is valid and a number input is used to add money.
  

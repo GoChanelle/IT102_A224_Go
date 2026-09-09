@@ -154,7 +154,7 @@ elif choice == "Withdraw":
  
 # TODO 37: Display a success message after a successful withdrawal.
       if success:
-        st.succes("Withdrawal successful.")
+        st.success("Withdrawal successful.")
  
 # TODO 38: Display the updated balance. 
         st.metric(
